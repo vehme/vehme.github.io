@@ -75,14 +75,14 @@
             <span class="author-block"><sup>♦️</sup>Pohang University of Science and Technology.</span>
             <br>
             <span class="author-block"><sup>*</sup>Equal contribution,</span>
-            <span class="author-block"><sup>**</sup>Co-corresponding authors</span>
+            <span class="author-block"><sup>**</sup>Co-corresponding authors.</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf"
+                <a href="./static/paper/VEHME.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -91,7 +91,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/1706.03762"
+                <a href="https://arxiv.org/abs/comming_soon" style="pointer-events: none" disabled
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -101,7 +101,7 @@
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://youtu.be/xvFZjo5PgG0?si=GFreULeA1uF8r6fk"
+                <a href="https://youtu.be/comming_soon" style="pointer-events: none" disabled
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -119,15 +119,6 @@
                   <span>Code</span>
                   </a>
               </span>
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/TUM-AVS/paper-website-project"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a>
             </div>
 
           </div>
@@ -140,7 +131,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-        <img src="./static/images/teaser.jpg"
+        <img src="./static/images/teaser.png"
                  class="teaser-image"
                 />
         <!-- You can also add a video as a teaser -->
@@ -151,7 +142,7 @@
         </video> 
         -->
       <h2 class="subtitle has-text-centered">
-        An example teaser image with its description.
+        Our model takes a question, reference answer, and student answer image as input to predict the correctness of the student's solution and identify any error locations, if the solution is incorrect.
       </h2>
     </div>
   </div>
@@ -159,7 +150,7 @@
 
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
+    <!-- <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
         <source src="./static/videos/cat.mp4"
                 type="video/mp4">
@@ -167,19 +158,16 @@
       <h2 class="subtitle has-text-centered">
         An example video to attract people.
       </h2>
-    </div>
-    <div class="hero-body">
+    </div> -->
+    <!-- <div class="hero-body">
       <video id="teaser" autoplay muted loop playsinline height="100%">
         <source src="./static/videos/video_B.mp4"
                 type="video/mp4">
       </video>
-        <!-- Video task
-        Check folder ./static/videos, change video_B to something meaningful there.
-        -->
       <h2 class="subtitle has-text-centered">
         A task for you: make this video slot show a dog.
       </h2>
-    </div>
+    </div> -->
   </div>
 </section>
 
@@ -194,7 +182,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            You can add the abstract of your paper here!
+            Automatically assessing handwritten mathematical solutions is an important problem in educational technology with practical applications, but it remains a significant challenge due to the diverse formats, unstructured layouts, and symbolic complexity of student work. To address this challenge, we introduce VEHME-a <b>V</b>ision-Language Model for <b>E</b>valuating <b>H</b>andwritten <b>M</b>athematics <b>E</b>xpressions—designed to assess open-form handwritten math responses with high accuracy and interpretable reasoning traces. VEHME integrates a two-phase training pipeline: (i) supervised fine-tuning using structured reasoning data, and (ii) reinforcement learning that aligns model outputs with multi-dimensional grading objectives, including correctness, reasoning depth, and error localization. To enhance spatial understanding, we propose an Expression-Aware Visual Prompting Module, trained on our synthesized multi-line math expressions dataset to robustly guide attention in visually heterogeneous inputs. Evaluated on AIHub and FERMAT datasets, VEHME achieves state-of-the-art performance among open-source models and approaches the accuracy of proprietary systems, demonstrating its potential as a scalable and accessible tool for automated math assessment. Our training and experiment code is publicly available at our <a href="https://github.com/phuongnt197/VEHME">GitHub repository</a>.
           </p>
         </div>
       </div>
@@ -202,7 +190,7 @@
     <!--/ Abstract. -->
 
     <!-- Paper video. -->
-    <div class="columns is-centered has-text-centered">
+    <!-- <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         
         <h2 class="title is-3">Video</h2>
@@ -216,7 +204,7 @@
                   frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/ Paper video. -->
   </div>
 </section>
@@ -226,11 +214,6 @@
       <div class="container is-max-desktop">
           <div class="item item-video0 has-text-centered">
             <h3 class="title is-3">Try it for yourself</h3>
-            <video poster="" id="video0" autoplay controls muted loop playsinline center width="70%">
-              <!-- Your video file here -->
-              <source src="static/videos/tryout.mp4"
-              type="video/mp4">
-            </video>
           </div>
             <p style="text-align: center;">
               Check the tutorial about how to start to build paper website for yourself:
@@ -264,11 +247,12 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{your2024paper,
-  author    = {A, B and C, D and E, F},
-  title     = {Create websites for academic papers},
-  journal   = {A Website Conference},
-  year      = {2024},
+    <pre><code>@inproceedings{nguyen2025vehme,
+  title     ={{VEHME}: A Vision-Language Model For Evaluating Handwritten Mathematics Expressions},
+  author    ={Thu Phuong Nguyen and Duc M. Nguyen and Hyotaek Jeon and Hyunwook Lee and Hyunmin Song and Sungahn Ko and Taehwan Kim},
+  booktitle ={The 2025 Conference on Empirical Methods in Natural Language Processing},
+  year      ={2025},
+  url       ={https://openreview.net/forum?id=lLlIXm4KNE}
 }</code></pre>
   </div>
 </section>
@@ -277,14 +261,14 @@
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link" href="https://diamond-wm.github.io">
+      <a class="icon-link" href="https://vehme.github.io">
           <i class="fas fa-home"></i>
       </a>
       <a class="icon-link"
-         href="https://arxiv.org/pdf/2405.12399">
+         href="https://arxiv.org/pdf/2405.12399" style="pointer-events: none" disabled>
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://github.com/eloialonso/diamond" class="external-link" disabled>
+      <a class="icon-link" href="https://github.com/phuongnt197/vehme" class="external-link">
         <i class="fab fa-github"></i>
       </a>
     </div>
@@ -292,7 +276,7 @@
       <div class="column is-8">
         <div class="content">
           <center><p>
-            This website (<a href="https://github.com/paper-website/paper-website.github.io">source code</a>) was adapted from the popular <a
+            This website (<a href="https://github.com/vehme/vehme.github.io">source code</a>) was adapted from the popular <a
             href="https://nerfies.github.io">Nerfies</a> project page and is licensed under a <br><a rel="license"
             href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
