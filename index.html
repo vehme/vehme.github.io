@@ -51,6 +51,11 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">VEHME: A Vision-Language Model For Evaluating Handwritten Mathematics Expressions</h1>
+          <center>
+            <div class="is-size-4 publication-venue-container">
+              <span class="publication-venue">EMNLP 2025 Main Conference</span>
+            </div>
+          </center>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://github.com/phuongnt197">Thu Phuong Nguyen</a><sup>♠️</sup><sup>*</sup>,</span>
@@ -82,7 +87,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="./static/files/paper.pdf"
+                <a href="https://aclanthology.org/2025.emnlp-main.1619/"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -100,7 +105,7 @@
                 </a>
               </span>
               <!-- Video Link. -->
-              <span class="link-block">
+              <!-- <span class="link-block">
                 <a href="https://youtu.be/comming_soon" style="pointer-events: none" disabled
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -108,7 +113,7 @@
                   </span>
                   <span>Video</span>
                 </a>
-              </span>
+              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
                 <a href="https://github.com/phuongnt197/VEHME"
@@ -295,12 +300,28 @@ Llama3.2 thinks that the student must determine the number of sides.
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@inproceedings{nguyen2025vehme,
-  title     ={{VEHME}: A Vision-Language Model For Evaluating Handwritten Mathematics Expressions},
-  author    ={Thu Phuong Nguyen and Duc M. Nguyen and Hyotaek Jeon and Hyunwook Lee and Hyunmin Song and Sungahn Ko and Taehwan Kim},
-  booktitle ={The 2025 Conference on Empirical Methods in Natural Language Processing},
-  year      ={2025},
-  url       ={https://openreview.net/forum?id=lLlIXm4KNE}
+    <pre><code>@inproceedings{nguyen-etal-2025-vehme,
+    title = "{VEHME}: A Vision-Language Model For Evaluating Handwritten Mathematics Expressions",
+    author = "Nguyen, Thu Phuong  and
+      Nguyen, Duc M.  and
+      Jeon, Hyotaek  and
+      Lee, Hyunwook  and
+      Song, Hyunmin  and
+      Ko, Sungahn  and
+      Kim, Taehwan",
+    editor = "Christodoulopoulos, Christos  and
+      Chakraborty, Tanmoy  and
+      Rose, Carolyn  and
+      Peng, Violet",
+    booktitle = "Proceedings of the 2025 Conference on Empirical Methods in Natural Language Processing",
+    month = nov,
+    year = "2025",
+    address = "Suzhou, China",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.emnlp-main.1619/",
+    pages = "31781--31801",
+    ISBN = "979-8-89176-332-6",
+    abstract = "Automatically assessing handwritten mathematical solutions is an important problem in educational technology with practical applications, but remains a significant challenge due to the diverse formats, unstructured layouts, and symbolic complexity of student work. To address this challenge, we introduce VEHME-a $\textbf{V}$ision-Language Model for $\textbf{E}$valuating $\textbf{H}$andwritten $\textbf{M}$athematics $\textbf{E}$xpressions{---}designed to assess open-form handwritten math responses with high accuracy and interpretable reasoning traces. VEHME integrates a two-phase training pipeline: (i) supervised fine-tuning using structured reasoning data, and (ii) reinforcement learning that aligns model outputs with multi-dimensional grading objectives, including correctness, reasoning depth, and error localization. To enhance spatial understanding, we propose an Expression-Aware Visual Prompting Module, trained on our synthesized multi-line math expressions dataset to robustly guide attention in visually heterogeneous inputs. Evaluated on AIHub and FERMAT datasets, VEHME achieves state-of-the-art performance among open-source models and approaches the accuracy of proprietary systems, demonstrating its potential as a scalable and accessible tool for automated math assessment. Our training and experiment code is publicly available at our GitHub repository."
 }</code></pre>
   </div>
 </section>
